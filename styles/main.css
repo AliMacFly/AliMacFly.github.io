@@ -4,18 +4,9 @@
   box-sizing: border-box;
 }
 
-
-.ul{
-  font-family: Rototo;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 li a {
   display:block;
   width: 60px 60px 60px;
-  
 }
 
 nav,
@@ -23,7 +14,9 @@ ul,
 li{
   display: flex;
   justify-content:space-around ;
-  margin: 10px 15px 10px 15px ;
+  margin: 20px 15px 20px 15px ;
+  list-style-type: none;
+  text-orientation: mixed;
 }
 
 .nav-link{
@@ -31,37 +24,96 @@ li{
   font-size: 25px;
 }
 
-ul{
-  /*list-style-type: none;
-  writing-mode: vertical-rl;*/
-  text-orientation: mixed;
-}
-
 h1{
   text-align: center;
   margin: 5px;
-
 }
 
+a:hover{
+  color: #c28126;
+  padding:0px;
+  border-radius: 15px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .logo{
   object-position: 50% 50%;
   object-fit: scale-down;
-
   display: flex;
   justify-content: center;
+
 }
+
+.image{
+  object-position: 50% 50%;
+  object-fit: scale-down;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 40px;
+}
+
+/**/
+
+.image-box {
+  width: 341px; 
+  height: 256px; 
+  background-image: url('/images/couchGuy\(2\).JPG');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.image-box img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-box:hover img {
+  opacity: 0; /* Hide the original image on hover */
+}
+
+
+/**/
+
 
 .box{
   margin: 20px 70px 5px 70px;
   margin-bottom: 130px;
   padding: 30px;
+  border-radius: 25px;
+  border: 2px solid #9E8B62;
   background-color: #E5D5C7;
 
 }
+/**/
+
+.image-container {
+  width: 341px; /* Adjust as needed */
+  height: 256px; /* Adjust as needed */
+  background-image: url('/images/sittingatcomputer\(2\).JPG');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.image-container img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  opacity: 0; /* Hide the original image on hover */
+}
+
+/**/
 
 .footer-content{
-  color: #ffff;
   background-color: #9E8B62;
   bottom: 0;
   width:100%;
@@ -70,13 +122,13 @@ h1{
 footer{
   margin-top: auto;
   margin: 0;
-  padding: 10px;
+  padding:10px;
   bottom: 0;
+  position: fixed 
 }
 
 .footer-link{
-  margin: 80px;
-  color: #E5D5C7 ;
+  text-decoration: none;
 }
 
 
