@@ -41,47 +41,7 @@ a{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo{
-  object-position: 50% 50%;
-  object-fit: scale-down;
-  display: flex;
-  justify-content: center;
-
-}
-
-.image{
-  object-position: 50% 50%;
-  object-fit: scale-down;
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  padding: 40px;
-}
-
-/**/
-
-.image-box {
-  width: 341px; 
-  height: 256px; 
-  background-image: url('/images/couchGuy\(2\).JPG');
-  background-size: cover;
-  background-position: center;
-}
-
-
-.image-box img {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.image-box:hover img {
-  opacity: 0; /* Hide the original image on hover */
-}
-
-
-/**/
-
-
+/*paragraph text*/
 .box{
   margin: 20px 70px 5px 70px;
   margin-bottom: 130px;
@@ -91,40 +51,80 @@ a{
   background-color: #E5D5C7;
 
 }
-/**/
+/*image-box and image-container*/
 
-.image-container {
-  width: 341px; /* Adjust as needed */
-  height: 256px; /* Adjust as needed */
-  background-image: url('/images/sittingatcomputer\(2\).JPG');
-  background-size: cover;
-  background-position: center;
+.logo,
+.image {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
 }
 
+.image {
+  margin: 50px;
+  padding: 40px;
+}
 
+.image-box,
+.image-container {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box {
+  background-image: url('/images/couchGuy(2).JPG');
+}
+
+.image-container {
+  background-image: url('/images/sittingatcomputer(2).JPG');
+}
+
+.image-box img,
 .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
+.image-box:hover img,
 .image-container:hover img {
-  opacity: 0; /* Hide the original image on hover */
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 
 /**/
 
-.footer-content{
-  background-color: #9E8B62;
-  bottom: 0;
-  width:100%;
+.nav-footer{
+  display:block;
+  width: 60px 60px 60px;
+  display: flex;
+  justify-content:space-around ;
+  margin: 20px 15px 20px 15px ;
+  list-style-type: none;
+  text-orientation: mixed;
+  list-style: none;
+  font-size: 15px;
 }
+
+/*footer*/
 
 footer{
   margin-top: auto;
   margin: 0;
   padding:10px;
   bottom: 0;
-  position: fixed 
+  position: fixed; 
+  width:100%;
+  background-color: #9E8B62;
 }
 
 .footer-link{
