@@ -19,6 +19,12 @@ p{
   font-weight: 550;
 }
 
+.box{
+  border: 5px solid #c28126;
+  margin: 50px;
+  background-color: #229ab5;
+}
+
 a{
   margin: 15px;
   color: black;
